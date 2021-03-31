@@ -53,6 +53,8 @@ body {
   }
 }
 
+
+// button
 .submitBtn {
   background: #29b744;
   color: #fff;
@@ -67,7 +69,7 @@ body {
   }
 }
 
-
+// sign_up
 .sinupPage {
   margin-top: 10vh;
   .titleArea {
@@ -97,13 +99,14 @@ body {
   }
 }
 
-
+// devise_shared_links
 .acountPage_link {
   & > a {
     color: #0075c1;
   }
 }
 
+// sign_in
 .signinPage {
   margin-top: 10vh;
   .title {
