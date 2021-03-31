@@ -1,4 +1,31 @@
-<p>ABCDE</p>
 
-<%# ここに追加する %>
-<%= link_to "仮のボタン", "#", class: "btn btn-primary" %>
+
+<div class="topPage">
+  
+  <% if @lists.blank? %>
+      <div class="nothing"><%= "まだリストはありません" %></div>
+  <% else %>
+    <% @lists.each do |list| %>
+        <div class="list">
+
+        
+          <h2 class="list_header_title"><%= link_to list.title, edit_list_path(list) %></h2>
+
+          <div class="explain"><%= list.explain %></div>
+
+
+      <% unless list.day == nil %>
+          <div class="by-day-index"><%= "期限：#{list.day}まで" %></div>
+      <% else %>
+          <div class="by-day-index"><%= "期限なし" %></div>
+      <% end %>
+
+
+          <div class="list_destroy"><%= link_to "終わったらクリック", list_path(list.id), method: :delete %></div>
+    
+
+      </div>
+    <% end %>
+  <% end %>
+  
+</div>
