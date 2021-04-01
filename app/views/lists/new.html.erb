@@ -1,5 +1,12 @@
+
+
 <div class="listnewPage">
+   
+    
   <div class="container">
+
+        <h1 class="new-text">直近でやることを入力しましょう</h1>
+
     <%= form_with model: @list, class: "new_list", local: true do |f| %>
       <% if @list.errors.any? %>
         <p class="text-danger">タイトルは1～255文字以内で入力してください</p>
