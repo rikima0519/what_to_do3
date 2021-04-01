@@ -1,26 +1,40 @@
 <header class="header">
       <nav class="nav">
         <ul class="header_menu">
-          <li class="nav-link">〇〇さん</li>
+
+
+          <% if user_signed_in? %>
+                  <li class="nav-link"><%= link_to "ようこそ#{current_user.name}さん", edit_user_path(current_user) %></li>
+          <% else %>
+                  <li class="nav-link">サインインしてください</li>
+          <% end %>
+
+
           <li class="header_menu_title"><%= link_to "What to do?", root_path, class: "nav-link" %></li>
           <li>
             <ul class="header_menu_inner">
              
               <li>
-                <%= link_to "#", class: "nav-link" do %>
+                <%= link_to new_list_path, class: "nav-link" do %>
                   <span class="mr-1">リストを作成</span>
                   <i class="far fa-edit"></i> 
                 <% end %>
               </li>
-<<<<<<< Updated upstream
+
               <li><%= link_to "サインアウト", "#", class: "nav-link" %></li>
-=======
+
 
               <li><%= link_to "サインアウト", destroy_user_session_path, class: "nav-link", method: :delete %></li>
               <%#--<i class="fas fa-sign-out-alt"></i>--%>
           
 
->>>>>>> Stashed changes
+
+
+              <li><%= link_to "サインアウト", destroy_user_session_path, class: "nav-link", method: :delete %></li>
+              <i class="fas fa-sign-out-alt"></i>
+          
+
+
             </ul>
           </li>
         </ul>
