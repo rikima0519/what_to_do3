@@ -57,7 +57,11 @@ https://i.gyazo.com/b9a12503863b5fe61adcc11dd0a618ad.mp4
 
 
 # 実装予定の機能
-リストが横並びになってしまうので、折り返して表示できるようにしたい
+①リストが横並びになってしまうので、折り返して表示できるようにしたい
+
+②重要度を色分けなどで区別したい
+
+
 # データベース設計
 
 
@@ -89,4 +93,5 @@ https://i.gyazo.com/b9a12503863b5fe61adcc11dd0a618ad.mp4
 
 
 # ローカルでの動作方法
-  git clone https://github.com/rikima0519/what_to_do.git
+  git clone https://github.com/rikima0519/what_to_do-3.git
+
