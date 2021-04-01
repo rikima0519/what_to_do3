@@ -5,7 +5,7 @@
     
   <div class="container">
 
-        <h1 class="new-text">直近でやることを入力しましょう</h1>
+        <h1 class="new-text">直近のやることを入力しよう!</h1>
 
     <%= form_with model: @list, class: "new_list", local: true do |f| %>
       <% if @list.errors.any? %>
@@ -15,7 +15,7 @@
       <%= f.text_field :title, autofocus: true, class: "form-control listName", placeholder: "やることを入力" %>
 
       <%= f.label :explain %>
-      <%= f.text_area :explain, class: "form-control listName", placeholder: "ある場合のみ", rows: "2" %>    
+      <%= f.text_area :explain, class: "form-control listName", placeholder: "補足など（ある場合のみ）", rows: "2" %>    
 
   <div class="by-day">
       <%= f.label :終了目安  %>
