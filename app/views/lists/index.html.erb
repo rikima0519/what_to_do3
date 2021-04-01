@@ -1,27 +1,24 @@
-<p>ABCDE</p>
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
+
 <%# ここに追加する %>
 <%= link_to "仮のボタン", "#", class: "btn btn-primary" %>
-=======
-=======
 
->>>>>>> Stashed changes
 
 <div class="topPage">
   
   <% if @lists.blank? %>
 
-<<<<<<< Updated upstream
-      <%#--<div class="top-photo">--%>
-=======
 
-     
->>>>>>> Stashed changes
+      <%#--<div class="top-photo">--%>
+
+
+    
       <h1 class="top-text">リストを作成しましょう</h1>
       <%= image_tag "top.png", class:"list-pict" %>
     
+
+      <div class="nothing"><%= "まだリストはありません" %></div>
 
   <% else %>
     <% @lists.each do |list| %>
@@ -48,4 +45,5 @@
   <% end %>
   
 </div>
->>>>>>> Stashed changes
+
+
