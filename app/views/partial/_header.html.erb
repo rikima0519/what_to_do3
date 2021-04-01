@@ -17,13 +17,23 @@
               <li>
                 <%= link_to new_list_path, class: "nav-link" do %>
                   <span class="mr-1">リストを作成</span>
-                  <i class="far fa-edit"></i>
+                  <i class="far fa-edit"></i> 
                 <% end %>
               </li>
+
+              <li><%= link_to "サインアウト", "#", class: "nav-link" %></li>
+
+
+              <li><%= link_to "サインアウト", destroy_user_session_path, class: "nav-link", method: :delete %></li>
+              <%#--<i class="fas fa-sign-out-alt"></i>--%>
+          
+
+
 
               <li><%= link_to "サインアウト", destroy_user_session_path, class: "nav-link", method: :delete %></li>
               <i class="fas fa-sign-out-alt"></i>
           
+
 
             </ul>
           </li>
