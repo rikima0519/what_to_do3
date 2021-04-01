@@ -1,0 +1,44 @@
+<<<<<<< Updated upstream
+=======
+.new_list{
+  max-width: 500px;
+  margin: 100px auto 0;
+  
+}
+
+
+.by-day{
+margin-top: 20px;
+margin-left: 120px;
+}
+
+.nothing{
+  font-size: large;
+  font-style:normal;
+  padding-left: 620px;
+  padding-top: 210px;
+
+}
+
+label{
+margin-top: 20px;
+
+}
+
+.list-pict{
+  margin: 100px auto;
+  width: 150vh;
+}
+
+.nav-link{ 
+  margin-right: 20px;
+}
+
+.header_menu_inner a{
+  margin-left: 20px;
+}
+
+.top-text{
+  text-align: center;
+}
+>>>>>>> Stashed changes
