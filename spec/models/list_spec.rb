@@ -6,7 +6,7 @@ RSpec.describe List, type: :model do
       @list = FactoryBot.build(:list)
     end
 
-    it 'titleが存在すれば登録できること' do
+    it 'title、day、explainが存在すれば登録できること' do
       expect(@list).to be_valid
     end
 
@@ -20,10 +20,10 @@ RSpec.describe List, type: :model do
       expect(@list).to be_valid
     end
 
-    it 'titleが空だと登録できない' do
+    it 'titleが1文字以上ないと登録できないこと' do
       @list.title = ""
       @list.valid?
-      expect(@list.errors.full_messages).to include("Title can't be blank")
+      expect(@list.errors.full_messages).to include("Title is too short (minimum is 1 character)")
     end
 
  end
