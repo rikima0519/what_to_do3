@@ -6,7 +6,11 @@ What_to_do3
 
 やるべきことを整理できるアプリ。
 
-直近でやるべきことをリスト化し、終了目安を設定できる。一覧表示画面にリストが期限の近い順に表示される。
+直近でやるべきことをリスト化し、終了目安を設定できる。
+
+一覧表示画面にリストが期限の近い順に表示される。
+
+
 やり終えたものは削除機能で削除できる。
 
 # URL
@@ -18,6 +22,13 @@ https://what-to-do-3.herokuapp.com/
 email: test@example
 
 password: kobato1018
+
+
+# Basic認証
+
+id: admin
+
+password: 2222
 
 
 # 利用方法
@@ -51,7 +62,7 @@ password: kobato1018
 
 
  ②リスト作成機能
- 
+
  ・やるべきことを記述できるリストを新しく作成できる
  
 # 実装した機能についてのGIFと説明
@@ -109,5 +120,4 @@ https://i.gyazo.com/b9a12503863b5fe61adcc11dd0a618ad.mp4
 
 
 # ローカルでの動作方法
-  git clone https://github.com/rikima0519/what_to_do-3.git
-
+  % git clone https://github.com/rikima0519/what_to_do3.git
